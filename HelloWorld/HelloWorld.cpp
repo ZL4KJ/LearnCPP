@@ -2,6 +2,17 @@
 //
 
 #include <iostream>
+using std::cout; // Eliminates the need to type std:: in front of cout
+using std::endl; // Eliminates the need to type std:: in front of endl
+using std::string; // Eliminates the need to type std:: infront of string
+
+/* Avoid having the following line of code 
+
+using namespace std;
+    
+   using the entire namespace can cause conflicts with functions from other namespaces.
+*/
+
 
 int main()
 {
@@ -20,7 +31,8 @@ int main()
     //doubles (number including decimal)
     double price = 21.99;
     double temperature = 21.5;
-    
+    const double PI = 3.14159; // const makes PI a read-only value that can not be pragmatically changed.
+        
     // single character
     char grade = 'A';
     char initial = 'C';
@@ -42,6 +54,8 @@ int main()
     
     std::cout << "the cost of this code is " << dollarSign << price; // output a string including some variables
     std::cout << ", but only on " << day << std::endl; // append this to the previous lines output then add a carriage return.
+
+    cout << "we no longer need to use std:: to call cout as we are are using std::cout" << endl; // using std::endl means we don't need std:: in front of endl
 
     if (apphasRun) { // this will only display if the apphasRun is set to true.
         std::cout << "apphasRun Value = " << apphasRun << std::endl;
