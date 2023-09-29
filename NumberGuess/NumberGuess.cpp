@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ctime>
-using std::cout;
-using std::cin;
+using std::cout; // this helps reduce the repetitive typing of std::cout down to just cout
+using std::cin; // again, removes the need to prefix std:: in front of cin
 
 int main()
 {
