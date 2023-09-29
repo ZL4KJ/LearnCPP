@@ -11,7 +11,7 @@ int main()
 
 	switch(month)
 	{
-		case 1:
+		case 1: // Case found to be true
 			std::cout << "It is January"; // do something for case 1
 			break; // break from the switch routine as we have done what we need to do
 		case 2:
