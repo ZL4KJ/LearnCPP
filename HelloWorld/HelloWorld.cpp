@@ -2,6 +2,8 @@
 //
 
 #include <iostream>
+#include "string"
+
 using std::cout; // Eliminates the need to type std:: in front of cout
 using std::endl; // Eliminates the need to type std:: in front of endl
 using std::string; // Eliminates the need to type std:: infront of string
@@ -61,6 +63,22 @@ int main()
         std::cout << "apphasRun Value = " << apphasRun << std::endl;
         std::cout << "The app has run is true " << std::endl;
     }
+
+    std::string firstName;
+    string fullName;
+    int age = 0;
+
+    cout << "\n\nWhat is your First Name?: ";
+    std::cin >> firstName; // Reading input from the user and store it in a string variable.
+
+    cout << "\nWhat is your Age?: ";
+    std::cin >> age; // read input from the user and store in the age integer variable.
     
+    cout << "\n\nWhat is your full Name?: ";
+    getline(std::cin >> std::ws, fullName); // we need to include "string" and add this to allow reading from the console before reading a full line of text with spaces.
+
+    cout << "\n\nHello " << firstName << endl;
+    cout << "Your full name is: " << fullName << endl;
+    cout << "You claim to be " << age << " years old" << endl;
     return 0;
 }
